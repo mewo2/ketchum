@@ -1,0 +1,43 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+.page {
+    display: flex;
+    width: 600px;
+    margin: auto;
+}
+
+.examples {
+    flex-grow: 1;
+    width: 0;
+}
+
+.suggestion {
+    text-align: center;
+    width: 250px;
+}
+.suggestword {
+    font-size: 2rem;
+    padding: 0.5em;
+}
+.basis {
+    color: #bbbbbb;
+    height: 3rem;
+}
+.options {
+    font-size: 4rem;
+}
+
+.json {
+    padding: 0.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+    text-decoration: none;
+    color: #777777;
+}

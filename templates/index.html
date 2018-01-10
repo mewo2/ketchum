@@ -1,0 +1,40 @@
+<!doctype html>
+<title>Ketchum</title>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+<h1>Ketchum</h1>
+
+<div class=page>
+    <div class=examples>
+        Examples:
+        <ul>
+            <li>
+                <form action='/add/'>
+                    <input name='word' type='text'>
+                    <input type='submit' value='Add'>
+                </form>
+            </li>
+            {% for example in examples %}
+            <li>{{example}} <a href="/?basis={{example}}">(like this)</a> - <a href="/remove/{{example}}">remove</a></li>
+            {% endfor %}
+        </ul>
+        <hr>
+        JSON:
+        <div class=json>
+            {{json}}
+        </div>
+        <hr>
+        <a href="/reset/">Reset</a>
+    </div>
+    <div class=suggestion>
+        {% if suggestion %} What about...
+        <div class=suggestword>
+            {{suggestion}}
+        </div>
+        <div class=basis>Similar to: {{basis | join(', ')}}</div>
+        <div class=options>
+            <a href="/block/{{suggestion}}">✖</a>
+            <a href="/add/{{suggestion}}">✔</a>
+        </div>
+        {% endif %}
+    </div>
+</div>
