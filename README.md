@@ -12,6 +12,8 @@ Start the server by running `python3 ketchum.py`. The first time it runs, it wil
 
 The server runs on port 8765 (you can change this at the top of `ketchum.py`). Point your web browser at http://127.0.0.1:8765/ and have a play around.
 
+I'm using the [fasttext][fasttext] word vectors, provided by Facebook. There's a lot of weird stuff in there, so watch out for misspellings, non-English words, proper nouns, slang, weird punctuation, and just about any other kind of oddness you can think of. On the other hand, it's extremely comprehensive and should be able to handle just about anything you feel like throwing at it.
+
 ## Support, licensing, ongoing development
 
 This project is a proof-of-concept experiment. I might revisit it in the future, but I'm far more likely to build something new using similar ideas.
