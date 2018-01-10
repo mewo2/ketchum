@@ -2,6 +2,8 @@
 
 This is code for generating lists of similar words, using word vector similarities from the [fasttext][fasttext] data, released by Facebook. It's useful for building collections of words to slot into generative grammars, such as Kate Compton's [tracery][tracery].
 
+![Example screenshot](screenshot.png?raw=true)
+
 ## Setup
 
 The code has a few code dependencies, listed in `requirements.txt`. You'll need recent-ish versions of the `annoy`, `flask` and `numpy` libraries. `pip3 install -r requirements.txt` will grab them, if you don't already have them installed. I've only tested it on Python 3, but it shouldn't be difficult to translate it to Python 2 if you're really fussed.
